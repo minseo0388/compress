@@ -19,7 +19,7 @@ namespace compress
                 {
                     foreach (string file in filelist)
                     {
-                        string path = file.Substring(sourcePath.Length + 1);
+                        string path = file.Substring(sourcePath.Length);
                         zipArchieve.CreateEntryFromFile(file, path);
                     }    
                 }
